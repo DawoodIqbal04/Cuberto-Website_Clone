@@ -1,16 +1,33 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import {Roboto_Flex } from "next/font/google";
+import LocalFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+export const roboto = Roboto_Flex({
   subsets: ["latin"],
-});
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+})
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const matter = LocalFont({
+  src: './fonts/Matter-Light.ttf',
+})
+
+export const robotoItalic = LocalFont({
+  src: './fonts/roboto-flex-latin.woff2',
+})
+
+export const matter400 = LocalFont({
+  src: './fonts/Matter-Regular.ttf',
+})
+
+export const matter500 = LocalFont({
+  src: './fonts/Matter-Medium.ttf',
+})
+
+export const matter700 = LocalFont({
+  src: './fonts/Matter-Bold.ttf',
+})
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,7 +42,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${matter.className} antialiased text-black`}
       >
         {children}
       </body>

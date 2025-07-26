@@ -1,5 +1,6 @@
 import React from "react";
 import { roboto, robotoItalic } from "../layout";
+import Roboto from "./Roboto";
 
 const Hero = () => {
   let tilt = "design".split("");
@@ -14,12 +15,8 @@ const Hero = () => {
           <video src="/herovideo.mp4" muted autoPlay loop></video>
         </div>
         <div className="flex items-center gap-6">
-          <div className={`${roboto.className} flex gap-1 font-thin `}>
-            {tilt.map((t, i) => (
-              <p key={i} className="italic scale-x-[115%]">
-                {t}
-              </p>
-            ))}
+          <div>
+            <Roboto text="design" />
           </div>
           and
         </div>

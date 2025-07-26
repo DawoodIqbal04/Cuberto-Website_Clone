@@ -8,7 +8,7 @@ const Navbar = () => {
         <div>
             <Image src="/logo.svg" alt="Cuberto Logo" width={75} height={40} />
         </div>
-        <div className='flex items-center gap-4'>
+        <div className='flex items-center gap-3.5'>
                 <div className={`${matter400.className} mr-10`}>menu</div>
             <div className='flex flex-col items-center gap-[2.5px] fixed right-10'>
                 <span className='h-0.5 w-5 backdrop-invert'></span>

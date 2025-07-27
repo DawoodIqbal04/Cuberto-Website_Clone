@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import VideoBar from "./components/VideoBar";
 import About from "./components/About";
 import Projects from "./components/Projects";
+import Resources from "./components/Resources";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <VideoBar />
       <About />
       <Projects />
+      <Resources />
     </main>
   );
 }

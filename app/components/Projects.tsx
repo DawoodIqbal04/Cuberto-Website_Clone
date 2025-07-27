@@ -1,6 +1,7 @@
 import React from "react";
 import Roboto from "./Roboto";
 import ProjectsCard from "./ProjectsCard";
+import Philosophy from "./Philosophy";
 
 const Projects = () => {
   let urls = [
@@ -60,8 +61,9 @@ const Projects = () => {
   ];
 
   return (
-    <div className="w-full min-h-screen text-white bg-black/90 rounded-t-[60px] pt-24 pl-34 pb-24 tracking-tighter">
-      <div className="text-[123px] flex flex-col items-start leading-32 ">
+    <div className="w-full min-h-screen text-white bg-[#1A1A1A] rounded-t-[60px] tracking-tighter">
+      <div className="pt-24 pl-34 pb-28">
+        <div className="text-[123px] flex flex-col items-start leading-32 ">
         <div>
           <h1>Featured</h1>
         </div>
@@ -178,6 +180,10 @@ const Projects = () => {
             />
           </div>
         </div>
+      </div>
+      </div>
+      <div>
+        <Philosophy />
       </div>
     </div>
   );

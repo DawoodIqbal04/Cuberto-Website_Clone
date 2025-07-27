@@ -3,7 +3,7 @@ import { matter400, matter500 } from "../layout";
 
 const About = () => {
   return (
-    <div className={`${matter400.className} w-full min-h-screen flex items-center gap- text-black px-40 pt-20`}>
+    <div className={`${matter400.className} w-full min-h-screen flex items-center text-black px-40 pt-20`}>
       <div className="w-1/2">
         <video className="w-[90%]" src="/about.mp4" muted autoPlay loop></video>
       </div>

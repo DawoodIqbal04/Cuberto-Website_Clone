@@ -5,6 +5,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Resources from "./components/Resources";
 import Inspiration from "./components/Inspiration";
+import Social from "./components/Social";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Projects />
       <Resources />
       <Inspiration />
+      {/* <Social /> */}
     </main>
   );
 }

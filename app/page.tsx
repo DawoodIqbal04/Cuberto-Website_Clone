@@ -4,6 +4,7 @@ import VideoBar from "./components/VideoBar";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Resources from "./components/Resources";
+import Inspiration from "./components/Inspiration";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <About />
       <Projects />
       <Resources />
+      <Inspiration />
     </main>
   );
 }
